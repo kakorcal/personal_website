@@ -1,3 +1,5 @@
 (()=>{
-  angular.module('root', []);
+  angular.module('portfolio', [
+    'portfolio.routes'
+  ]);
 })();
