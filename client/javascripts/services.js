@@ -32,18 +32,18 @@
         images: {path: 'bomberman', slideCount: 3}
       },
       {
-        title: 'Sara Faith Alterman',
-        date: 'Oct 2015',
-        github: 'https://github.com/kakorcal/sara_alterman',
-        link: 'http://sarafaithalterman.com/',
-        images: {path: 'sara_alterman', slideCount: 3}
-      },
-      {
         title: 'Michael Baca Photography',
         date: 'Dec 2015',
         github: 'https://github.com/kakorcal/michael_baca',
         link: 'http://michaelbaca.com/',
         images: {path: 'michael_baca', slideCount: 3}
+      },
+      {
+        title: 'Sara Faith Alterman',
+        date: 'Oct 2015',
+        github: 'https://github.com/kakorcal/sara_alterman',
+        link: 'http://sarafaithalterman.com/',
+        images: {path: 'sara_alterman', slideCount: 3}
       }
     ]; 
   }

@@ -1,6 +1,10 @@
 <!-- TODO: put sidenav into partial directive -->
-<md-sidenav layout='column' md-is-locked-open="$mdMedia('gt-sm')" md-whiteframe='4' class='md-sidenav-left'>
-  <md-toolbar layout-padding flex class='md-primary md-hue-3'>
+<md-sidenav 
+  layout='column' 
+  md-is-locked-open="$mdMedia('gt-sm')" 
+  md-whiteframe='4'
+  class='md-sidenav-left'>
+  <md-toolbar layout-padding flex md-ink-ripple="#A7FFEB" class='md-primary md-hue-2'>
     <div layout='column' layout-align='center center'>
       <h3>Thanks For Stopping By!</h3>
       <img src="../../assets/thumbnail.png" height="215" width="215" alt="pic">    
@@ -20,10 +24,12 @@
   </md-toolbar>
 </md-sidenav>
 <div layout='row' layout-wrap flex>
-  <md-toolbar flex='33' md-ink-ripple="#A7FFEB" class='md-accent md-hue-1'>blah</md-toolbar>
-  <md-toolbar flex='33' md-ink-ripple="#A7FFEB" class='md-accent md-hue-2'>blah</md-toolbar>
-  <md-toolbar flex='33' md-ink-ripple="#A7FFEB" class='md-accent md-hue-3'>blah</md-toolbar>
-  <md-toolbar flex='33' md-ink-ripple="#A7FFEB" class='md-warn md-hue-1'>blah</md-toolbar>
-  <md-toolbar flex='33' md-ink-ripple="#A7FFEB" class='md-warn md-hue-2'>balh</md-toolbar>
-  <md-toolbar flex='33' md-ink-ripple="#A7FFEB" class='md-warn md-hue-3'>blah</md-toolbar>
+  <md-toolbar flex='33' layout-padding
+    ng-repeat='portfolio in vm.portfolios' 
+    ng-class='vm.getClass($index)' 
+    md-ink-ripple="#A7FFEB">
+    <h5>
+      {{portfolio.title}}
+    </h5>
+  </md-toolbar>
 </div>
