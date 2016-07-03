@@ -4,7 +4,9 @@
   function routes($routeProvider, $locationProvider){
     $routeProvider
       .when('/', {
-        templateUrl: '../views/pages/main.html'
+        templateUrl: '../views/pages/main.html',
+        controller: 'PostsController',
+        controllerAs: 'vm'
       })
       .otherwise({
         redirectTo: '/'
