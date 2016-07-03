@@ -2,6 +2,7 @@
   angular.module('portfolio', [
     'ngAnimate',
     'ngMaterial',
-    'portfolio.routes'
+    'portfolio.routes',
+    'portfolio.services'
   ]);
 })();
