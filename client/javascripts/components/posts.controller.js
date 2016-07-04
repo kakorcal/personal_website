@@ -4,9 +4,7 @@
     .controller('PostsController', PostsController);
 
     function BootstrapLightbox(LightboxProvider){
-      LightboxProvider.templateUrl = '../../views/partials/_lightbox.html';
-      LightboxProvider.fullScreenMode = true;
-      console.log(LightboxProvider);
+      // LightboxProvider.templateUrl = '../../views/partials/_lightbox.html';
     }
 
     BootstrapLightbox.$inject = ['LightboxProvider']
@@ -23,8 +21,8 @@
         return acc;
       }, []);
 
-      vm.openLightboxModal = (images, start)=>{
-        Lightbox.openModal(images, start);
+      vm.openLightboxModal = (idx)=>{
+        Lightbox.openModal(vm.slides, idx);
       };
       
       vm.getClass = (idx)=>{
