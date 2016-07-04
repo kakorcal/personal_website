@@ -12,7 +12,7 @@
 
     function PostsController(PortfolioService, Lightbox) {
       const vm = this;
-      console.log(Lightbox);
+
       vm.portfolios = PortfolioService.portfolio;
       
       vm.slides = vm.portfolios.reduce((acc, cur)=>{
@@ -22,8 +22,11 @@
         return acc;
       }, []);
 
-      vm.openLightboxModal = (idx)=>{
-        Lightbox.openModal(vm.slides, idx);
+      vm.openLightboxModal = (id, count)=>{
+        // Alway starts at the first image of each portfolio
+        // TODO: count * (id - 1) only works because the count is the same for
+        // all portfolios. should create a more generic formula to account for that.
+        Lightbox.openModal(vm.slides, count * (id - 1));
       };
       
       vm.getClass = (idx)=>{
