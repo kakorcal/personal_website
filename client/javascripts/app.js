@@ -5,9 +5,9 @@
     'portfolio.routes',
     'portfolio.services',
     'portfolio.component.posts'
-  ]).config(theme);
+  ]).config(Theme);
 
-  function theme($mdThemingProvider){
+  function Theme($mdThemingProvider){
     // config theme to ensure text is always white
     $mdThemingProvider.definePalette('white-palette', {
       // Need 50 and 100 to prevent instantiation error
@@ -48,5 +48,5 @@
       });
   }
 
-  theme.$inject = ['$mdThemingProvider'];
+  Theme.$inject = ['$mdThemingProvider'];
 })();
