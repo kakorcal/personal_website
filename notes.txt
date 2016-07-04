@@ -1,0 +1,15 @@
+<md-card flex='33' ng-repeat='portfolio in vm.portfolios'>
+  <img src="/assets/{{portfolio.images.path}}/thumbnail.jpg" class='md-card-image' alt="pic">
+  <md-card-title>
+    <md-card-title-text>
+      <span class="md-headline">{{portfolio.title}}</span>
+    </md-card-title-text>
+  </md-card-title>
+  <md-card-content>
+    <p>{{portfolios.desc}}</p>
+  </md-card-content>
+  <md-card-actions layout='column' layout-align='start'>
+    <md-button>View Photos</md-button>
+    <md-button href='{{portfolio.link}}' target='_blank'>Live Site</md-button>
+  </md-card-actions>
+</md-card>

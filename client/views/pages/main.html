@@ -7,7 +7,7 @@
   <md-toolbar layout-padding flex md-ink-ripple="#A7FFEB" class='md-primary md-hue-2'>
     <div layout='column' layout-align='center center'>
       <h3>Thanks For Stopping By!</h3>
-      <img src="../../assets/thumbnail.png" height="215" width="215" alt="pic">    
+      <img src="/assets/thumbnail.png" height="215" width="215" alt="pic">    
       <p>Hi there! My name is Kenneth Korcal. I am a Front-End Web Developer based in San Francisco, California. You can check out my projects here. Have a nice day!</p>    
     </div>
     <md-list layout='column'>
@@ -24,12 +24,15 @@
   </md-toolbar>
 </md-sidenav>
 <div layout='row' layout-wrap flex>
-  <md-toolbar flex='33' layout-padding
+ <md-toolbar flex='33' layout-padding
     ng-repeat='portfolio in vm.portfolios' 
-    ng-class='vm.getClass($index)' 
-    md-ink-ripple="#A7FFEB">
-    <h5>
-      {{portfolio.title}}
-    </h5>
+    ng-class='vm.getClass($index)'>
+    <h4>{{portfolio.title}}</h4>
+    <span>{{portfolio.date}}</span>
+    <p>{{portfolio.desc}}</p>
+    <div layout='column' layout-align='start' class='layout-align-start-stretch layout-column'>
+      <md-button class='md-raised'>View Photos</md-button>
+      <md-button class='md-raised' ng-href='{{portfolio.link ? portfolio.link : portfolio.github}}' target='_blank'>{{portfolio.link ? 'Live Site' : 'Github'}}</md-button>
+    </div>
   </md-toolbar>
 </div>
