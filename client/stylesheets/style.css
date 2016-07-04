@@ -2,6 +2,10 @@
   margin-top: 15px;
 }
 
+.portfolio-content h3 {
+  font-size: 23px;
+}
+
 .portfolio-content p {
   font-size: 18px;
 }
