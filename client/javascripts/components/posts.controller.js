@@ -5,6 +5,7 @@
 
     function BootstrapLightbox(LightboxProvider){
       // LightboxProvider.templateUrl = '../../views/partials/_lightbox.html';
+      LightboxProvider.fullScreenMode = true;
     }
 
     BootstrapLightbox.$inject = ['LightboxProvider']
