@@ -14,7 +14,7 @@
       {
         title: 'Knex Photo App',
         date: 'Jun 2016',
-        desc: 'Photo sharing application built with node.js. Also using passport.js for authentication and authorization',
+        desc: 'Photo sharing application built with node.js. Also using passport.js for authentication and authorization.',
         github: 'https://github.com/kakorcal/knex_photo_app',
         link: null,
         images: {path: 'knex_photo', slideCount: 3}
@@ -22,7 +22,7 @@
       {
         title: 'Linguo Language App',
         date: 'Apr 2016',
-        desc: "Full-stack JavaScript application that helps users find language exchange partners based on their location.",
+        desc: "Full-stack JavaScript application that helps users find language partners based on their location.",
         github: 'https://github.com/kakorcal/linguo',
         link: 'https://linguoisdead.herokuapp.com/',
         images: {path: 'linguo', slideCount: 3}
