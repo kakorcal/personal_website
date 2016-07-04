@@ -5,8 +5,8 @@
   md-is-locked-open="$mdMedia('gt-sm')" 
   md-whiteframe='4'
   class='md-sidenav-left'>
-  <md-toolbar layout-padding flex md-ink-ripple="#A7FFEB" class='md-primary md-hue-2'>
-    <div layout='column' layout-align='center center'>
+  <md-toolbar layout-padding flex md-ink-ripple="#A7FFEB" class='md-hue-2'>
+    <div layout='column' layout-align='center center' class='sidebar-content'>
       <h3>Thanks For Stopping By!</h3>
       <img src="/assets/thumbnail.png" height="215" width="215" alt="pic">    
       <p>Hi there! My name is Kenneth Korcal. I am a Front-End Web Developer based in San Francisco, California. You can check out my projects here. Have a nice day!</p>    
@@ -26,11 +26,12 @@
 </md-sidenav>
 <div layout='row' layout-wrap flex class='portfolio-content'>
  <md-toolbar flex='33' layout-padding
+    md-ink-ripple="#A7FFEB"
     ng-repeat='portfolio in vm.portfolios' 
     ng-class='vm.getClass($index)'>
     <div class='portfolio-text'>
-      <h4>{{portfolio.title}}</h4>
-      <span>{{portfolio.date}}</span>
+      <h3>{{portfolio.title}}</h3>
+      <p>{{portfolio.date}}</p>
       <p>{{portfolio.desc}}</p>
     </div>
     <div layout='column' layout-align='start' class='layout-align-start-stretch layout-column'>
