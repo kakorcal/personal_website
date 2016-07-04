@@ -2,6 +2,7 @@
   angular.module('portfolio', [
     'ngAnimate',
     'ngMaterial',
+    'angular-loading-bar',
     'portfolio.routes',
     'portfolio.services',
     'portfolio.component.posts'
