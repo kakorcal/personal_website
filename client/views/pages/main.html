@@ -27,9 +27,11 @@
  <md-toolbar flex='33' layout-padding
     ng-repeat='portfolio in vm.portfolios' 
     ng-class='vm.getClass($index)'>
-    <h4>{{portfolio.title}}</h4>
-    <span>{{portfolio.date}}</span>
-    <p>{{portfolio.desc}}</p>
+    <div class='portfolio-text'>
+      <h4>{{portfolio.title}}</h4>
+      <span>{{portfolio.date}}</span>
+      <p>{{portfolio.desc}}</p>
+    </div>
     <div layout='column' layout-align='start' class='layout-align-start-stretch layout-column'>
       <md-button class='md-raised'>View Photos</md-button>
       <md-button class='md-raised' ng-href='{{portfolio.link ? portfolio.link : portfolio.github}}' target='_blank'>{{portfolio.link ? 'Live Site' : 'Github'}}</md-button>
