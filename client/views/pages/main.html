@@ -1,8 +1,8 @@
-<!-- TODO: put sidenav into partial directive -->
+<!-- TODO: put top and sidenav into directive -->
 <md-sidenav 
   flex='25'
-  layout='column' 
-  md-is-locked-open="$mdMedia('gt-sm')" 
+  layout='column'
+  md-is-locked-open="$mdMedia('gt-md')" 
   md-whiteframe='4'
   class='md-sidenav-left'>
   <md-toolbar layout-padding flex md-ink-ripple="#A7FFEB" class='md-hue-2'>
@@ -25,7 +25,7 @@
   </md-toolbar>
 </md-sidenav>
 <div layout='row' layout-wrap flex class='portfolio-content'>
- <md-toolbar flex='33' layout-padding
+ <md-toolbar flex='100' flex-gt-sm='33' layout-padding
     md-ink-ripple="#A7FFEB"
     ng-repeat='portfolio in vm.portfolios' 
     ng-class='vm.getClass($index)'>

@@ -12,11 +12,31 @@
   <base href="/">
 </head>
 <body ng-cloak layout='column'>
+  <md-toolbar layout-padding hide-gt-md
+    layout-gt-xs='row' 
+    class='md-hue-2' 
+    md-ink-ripple="#A7FFEB">
+    <div class='title' flex>
+      <h2>Kenneth Korcal <span class='md-subhead'>Front-End Web Developer</span></h2>
+    </div>
+    <!-- TODO: put top and sidenav into directive -->
+    <md-list layout='row'>
+      <md-list-item>
+        <md-button href='https://github.com/kakorcal' target='_blank' class='md-raised'><i class='fa fa-github'></i> Github</md-button>
+      </md-list-item>
+      <md-list-item>
+        <md-button href='https://www.linkedin.com/in/kennethkorcal' target='_blank' class='md-raised'><i class='fa fa-linkedin'></i> LinkedIn</md-button>      
+      </md-list-item>
+      <md-list-item>
+        <md-button href='/assets/Kenneth_Korcal_Resume.pdf' target='_blank' class='md-raised'><i class='fa fa-file-text-o'></i> Resume</md-button>      
+      </md-list-item>
+    </md-list>
+  </md-toolbar>
   <div ng-view layout='row' flex></div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-route.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-aria.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-animate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-aria.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.0.9/angular-material.min.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.3.3/ui-bootstrap-tpls.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/angular-bootstrap-lightbox/0.12.0/angular-bootstrap-lightbox.js'></script>
